@@ -4,7 +4,7 @@ const UserContext = createContext();
 
 const UserContextProvider = ({ children }) => {
   const [users, setUsers] = useState([]);
-  const [balance, setBalance] = useState(200);
+  const [balance, setBalance] = useState(0);
 
   const register = (name, email, password) => {
     setUsers([...users, { name, email, password }]);
